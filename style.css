@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main>img {
+  width: 42%;
+  height: auto;
+}
+
+.eye {
+  position: absolute;
+  height: auto;
+}
+
+.eye:first-of-type {
+  top: 11%;
+  left: 49.8%;
+  width: 3.2%;
+}
+
+.eye:last-of-type {
+  top: 11%;
+  left: 55.5%;
+  width: 3%;
+}
