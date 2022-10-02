@@ -10,8 +10,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #62a4ab;
   height: 100vh;
+  background-color: #62a4ab;
 }
 
 main {
