@@ -1,12 +1,12 @@
 const anchor = document.getElementById('anchor');
 const rect = anchor.getBoundingClientRect();
 const eyes = document.querySelectorAll('.eye');
+const anchorX = rect.left + rect.width / 2;
+const anchorY = rect.top + rect.height / 2;
 
 document.addEventListener('mousemove', function (e) {
   const mouseX = e.clientX;
   const mouseY = e.clientY;
-  const anchorX = rect.left + rect.width / 2;
-  const anchorY = rect.top + rect.height / 2;
   const angleDeg = angle(mouseX, mouseY, anchorX, anchorY)
   eyes.forEach(function (eye) {
     eye.style.transform = `rotate(${90 + angleDeg}deg)`;
